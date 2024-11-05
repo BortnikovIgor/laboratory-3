@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма регистрации</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"></head>
+<body>
+<div class="container mt-5">
+  <h1 class="text-center">Регистрация</h1>
+  <form id="registrationForm" class="mt-4">
+    <div class="mb-3">
+      <label for="email" class="form-label">Электронная почта</label>
+      <input type="email" class="form-control" id="email" required>
+      <div class="invalid-feedback">Пожалуйста, введите корректный адрес электронной почты.</div>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Номер телефона</label>
+      <input type="tel" class="form-control" id="phone" required>
+      <div class="invalid-feedback">Пожалуйста, введите корректный номер телефона.</div>
+    </div>
+    <div class="mb-3">
+      <label for="username" class="form-label">Логин</label>
+      <input type="text" class="form-control" id="username" required>
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Возраст</label>
+      <input type="number" class="form-control" id="age" required>
+      <div class="invalid-feedback">Возраст должен быть от 18 до 90 лет.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
